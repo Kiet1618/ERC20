@@ -6,10 +6,20 @@ contract ERC20{
     mapping(address => uint256) balances;
     mapping(address => mapping (address => uint256)) allowed;
 
-    string public name = "Sollasido";
-    string public symbol = "Sol";
-    uint8 public decimals = 8;
+    string private name = "Sollasido";
+    string private symbol = "Sol";
+    uint8 private decimals = 8;
     uint256 private total = 2100000;
+     
+    function getName() public view returns (string memory){
+        return name;
+    }
+    function getSymbol() public view returns (string memory){
+        return symbol;
+    }
+    function getDecimals() public view returns (uint8){
+        return decimals;
+    }
 
     function totalSupply() public view returns (uint256){
         return total;

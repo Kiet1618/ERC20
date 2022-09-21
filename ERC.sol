@@ -9,7 +9,7 @@ contract ERC20{
     string public name = "Sollasido";
     string public symbol = "Sol";
     uint8 public decimals = 8;
-    uint256 public total = 2100000;
+    uint256 private total = 2100000;
 
     function totalSupply() public view returns (uint256){
         return total;

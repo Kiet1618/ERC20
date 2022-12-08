@@ -6,8 +6,8 @@ contract ERC20{
     mapping(address => uint256) balances;
     mapping(address => mapping (address => uint256)) allowed;
 
-    string private name = "Sollasido";
-    string private symbol = "Sol";
+    string private name = "TestCoin";
+    string private symbol = "TC";
     uint8 private decimals = 8;
     uint256 private total = 2100000;
      
